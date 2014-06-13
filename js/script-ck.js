@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){function i(){console.log("Success!")}var t,n={},r="play_sound.php";e(".button").click(function(){t=this.id;n={id:t};console.log(n);e.ajax({url:r,type:"POST",data:JSON.stringify(n),contentType:"application/json",complete:i})})});

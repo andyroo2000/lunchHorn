@@ -1,0 +1,65 @@
+// VARIABLES
+$font-stack: Helvetica, sans-serif;
+
+// COLOR SCHEME
+$not-black: #333; // dark gray
+$not-white: #FEFEFE; // tech white
+$blue: RGBA(0, 129, 255, 1);
+$green: RGBA(39, 239, 116, 1);
+$yellow: RGBA(239, 255, 0, 1);
+$orange: RGBA(251, 153, 0, 1);
+$red: RGBA(242, 11, 4, 1);
+
+$nav_and_container_padding: 1em;
+
+
+// STYLES
+body {
+  font-family: $font-stack;
+  background-color: $not-white;
+}
+
+.container {
+  padding: $nav_and_container_padding;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+.navbar-brand {
+  background-color: $blue;
+  color: $not-white;
+  padding: $nav_and_container_padding;
+  font-weight: bold;
+}
+
+
+
+// BUTTONS
+button:focus {outline:0 !important;}
+
+.button {
+  background-color: #efefef;
+  background: -webkit-linear-gradient(top, #fff, #dfdfdf);  
+  background: -moz-linear-gradient(top, #fff, #dfdfdf);  
+  background: -ms-linear-gradient(top, #fff, #dfdfdf);
+  background: -o-linear-gradient(top, #fff, #dfdfdf);  
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  color: #333;
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+  top: 80px;
+  
+  &:hover {
+    background-color: #efefef;
+    background: -webkit-linear-gradient(top, #f5f7f9, #cfcfcf);
+    background: -moz-linear-gradient(top, #f5f7f9, #cfcfcf);
+    background: -ms-linear-gradient(top, #f5f7f9, #cfcfcf);
+    background: -o-linear-gradient(top, #f5f7f9, #cfcfcf);
+    cursor: pointer;
+  }
+}
