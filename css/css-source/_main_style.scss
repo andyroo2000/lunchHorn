@@ -4,34 +4,41 @@ $font-stack: Helvetica, sans-serif;
 // COLOR SCHEME
 $not-black: #333; // dark gray
 $not-white: #FEFEFE; // tech white
-$blue: RGBA(0, 129, 255, 1);
-$green: RGBA(39, 239, 116, 1);
-$yellow: RGBA(239, 255, 0, 1);
-$orange: RGBA(251, 153, 0, 1);
-$red: RGBA(242, 11, 4, 1);
+$green: RGBA(27, 188, 155, 1);
+$green-dark: RGBA(46, 203, 112, 1);
+$blue: RGBA(54, 153, 220, 1);
+$blue-dark: RGBA(52, 73, 94, 1);
+$purple: RGBA(154, 89, 179, 1);
+$red: RGBA(235, 75, 61, 1);
 
-$nav_and_container_padding: 1em;
+
+$nav_padding: .6em;
 
 
 // STYLES
 body {
   font-family: $font-stack;
+  font-size: 1.7em;
   background-color: $not-white;
+  text-align: center;
 }
 
 .container {
-  padding: $nav_and_container_padding;
 }
 
 h1 {
   font-weight: bold;
 }
 
+p {
+  padding: $nav_padding;
+  font-weight: bold;
+}
 
 .navbar-brand {
-  background-color: $blue;
+  background-color: $green;
   color: $not-white;
-  padding: $nav_and_container_padding;
+  padding: $nav_padding;
   font-weight: bold;
 }
 
@@ -62,4 +69,62 @@ button:focus {outline:0 !important;}
     background: -o-linear-gradient(top, #f5f7f9, #cfcfcf);
     cursor: pointer;
   }
+}
+
+// INSTRUCTIONS
+#instructions {
+  background-color: $green-dark;
+  color: $not-white;
+}
+
+
+// SOUND OPTION DIVS
+.sounds {
+  color: $not-white;
+  // padding: $nav_padding;
+  font-weight: bold;
+}
+
+#meeting-bell {
+  background-color: $blue-dark;
+}
+
+#coffee-triangle {
+  background-color: $green;
+}
+
+#lunch-train {
+  background-color: $purple;
+}
+
+
+// EACH SOUND TO PLAY
+.play {
+  padding: $nav_padding;
+  background-color: red;
+  outline-color: $blue-dark;
+  outline-width: 1px;
+  outline-style: dotted;
+  opacity: 0.95;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+// PLAY BUTTON - FONT AWESOME ICON
+.fa-play-circle-o {
+  float: right;
+  position: absolute;
+  right: .5em;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+
+// SELECTED TRACK
+.selectedTrack {
+  opacity: 1;
 }
