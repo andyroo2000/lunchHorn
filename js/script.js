@@ -6,25 +6,13 @@ jQuery(document).ready(function($) {
   var url = 'play_sound.php';   // the URL of that the AJAX will POST to
 
   $('.play').click(function(){
-    // GET DATA ABOUT THE CLICKED TRACK TO SEND IN A POST REQUEST
-    id = this.id;  // save the id of the clicked item
-    idParent = $(this).parent().attr("id"); // save the id of the containing div
-    data = {id: id, idParent: idParent}; // create an object to send in our post request
 
-    // MAKE A POST REQUEST WHEN THE BUTTON IS CLICKED TO PLAY THE SOUND
-    $.ajax({
-        url: url,
-        type: "POST",
-        data: JSON.stringify(data),
-        contentType: "application/json",
-        complete: logSuccessCallback
-    });
 
     // ADD 'selectedtrack' CLASS WHEN TRACK IS CLICKED AND REMOVE CLASS FROM OTHER TRACKS
-    $(this).toggleClass('selectedTrack').siblings().removeClass('selectedTrack');
+    $(this).addClass('selectedTrack').siblings().removeClass('selectedTrack');
 
     // ADD PLAY FONT-AWESOME PLAY BUTTON CLASS WHEN TRACK IS CLICKED AND REMOVE FROM OTHER TRACKS
-    $(this).children().toggleClass('fa fa-play-circle-o');
+    $(this).children().addClass('fa fa-play-circle-o');
     $(this).siblings().children().removeClass('fa fa-play-circle-o');
   })
 
@@ -46,6 +34,32 @@ jQuery(document).ready(function($) {
     }
 
   })
+
+
+  $('i, fa fa-play-circle-o').click(function() {
+
+    // GET DATA ABOUT THE CLICKED TRACK TO SEND IN A POST REQUEST
+    id = $(this).parent().attr('id'); // save the id of the clicked item
+    idParent = $(this).parent().parent().attr("id"); // save the id of the containing div
+    data = {id: id, idParent: idParent}; // create an object to send in our post request
+
+    // log the data object being sent in the post request
+    console.log(data);
+
+    // MAKE A POST REQUEST WHEN THE BUTTON IS CLICKED TO PLAY THE SOUND
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        complete: logSuccessCallback
+    });
+
+
+  })
+
+
+
 });
 
 
