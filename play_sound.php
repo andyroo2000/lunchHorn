@@ -44,7 +44,7 @@ shell_exec("echo $id >> $myFile");
 shell_exec("echo $path_of_bell >> $myFile");
 
 
-shell_exec('play $path_of_bell'); 
+shell_exec('sudo aplay $path_of_bell'); 
 
 // shell_exec("sudo /usr/local/bin/mpg123 ~/Desktop/test.mp3" ); 
 
