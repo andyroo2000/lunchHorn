@@ -40,7 +40,7 @@ if ($idParent == 'lunch-train') {
 
 
 // shell_exec('sudo aplay $path_of_bell'); 
-shell_exec('sudo aplay /home/andrew/www/audio/meeting-bell/short-bell.wav 2>&1'); 
+shell_exec('sudo aplay /home/andrew/www/audio/meeting-bell/short-bell.wav 2> /home/andrew/www/errors.txt'); 
 
 ?>
 
