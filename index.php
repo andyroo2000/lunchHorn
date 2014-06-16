@@ -35,7 +35,6 @@
 			echo ('</div>');
 		}
 		?>
-		<i></i>
 	</div> <!-- end of .sounds #meeting-bell -->
 
 	<div class="sounds" id="coffee-triangle">
@@ -48,7 +47,6 @@
 			echo ('</div>');
 		}
 		?>
-		<i></i>
 	</div> <!-- end of .sounds #coffee-triangle -->
 
 	<div class="sounds" id="lunch-train">

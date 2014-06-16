@@ -32,15 +32,14 @@ if ($idParent == 'lunch-train') {
 
 
 
-// $myFile = '~/Desktop/andrew.txt';
-// // $id = 'test';
+// $myFile = 'home/andrew/www/errors.txt';
+// $id = 'test';
 // shell_exec("echo $idParent > $myFile");
 // shell_exec("echo $id >> $myFile");
-// shell_exec("echo $path_of_bell >> $myFile");
+shell_exec("echo $path_of_bell >> /home/andrew/www/errors.txt");
 
-
-shell_exec('sudo aplay $path_of_bell'); 
-// shell_exec('sudo aplay /home/andrew/www/audio/meeting-bell/short-bell.wav 2> /home/andrew/www/errors.txt'); 
+shell_exec("aplay $path_of_bell"); 
+// shell_exec('aplay /home/andrew/www/audio/meeting-bell/short-bell.wav 2> /home/andrew/www/errors.txt'); 
 
 ?>
 
