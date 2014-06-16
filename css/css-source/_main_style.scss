@@ -40,6 +40,8 @@ p {
   color: $not-white;
   padding: $nav_padding;
   font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
 }
 
 
@@ -67,7 +69,7 @@ button:focus {outline:0 !important;}
     background: -moz-linear-gradient(top, #f5f7f9, #cfcfcf);
     background: -ms-linear-gradient(top, #f5f7f9, #cfcfcf);
     background: -o-linear-gradient(top, #f5f7f9, #cfcfcf);
-    cursor: pointer;
+ 
   }
 }
 
