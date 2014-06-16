@@ -36,6 +36,13 @@ jQuery(document).ready(function($) {
   })
 
 
+  // CLOSE TRACK VIEW WHEN HEADER IS CLICKED
+  $('.navbar-header').click(function() {
+    $('.play').addClass('hidden');
+    $('.play').removeClass('not-hidden');
+  })
+
+
   $('i, fa fa-play-circle-o').click(function() {
 
     // GET DATA ABOUT THE CLICKED TRACK TO SEND IN A POST REQUEST

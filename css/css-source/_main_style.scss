@@ -81,8 +81,9 @@ button:focus {outline:0 !important;}
 // SOUND OPTION DIVS
 .sounds {
   color: $not-white;
-  // padding: $nav_padding;
   font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #meeting-bell {

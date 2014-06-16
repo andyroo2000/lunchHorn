@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<?php include ('sounds.php'); // include the arrays of sounds ?>
-
+	<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 	<meta charset="UTF-8">
 	<title>Lunch Horn</title>
 	<link rel="stylesheet" type="text/css" href="/css/styles.css" />
